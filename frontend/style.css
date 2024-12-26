@@ -1,0 +1,72 @@
+body {
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    
+    masthead {
+    padding: 11em 0;
+    background-image: url("https://images.unsplash.com/photo-1512716679859-da19b4af9c38?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    color: #ffffff;
+    }
+    
+    masthead-intro {
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    }
+    
+    masthead-heading {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    }
+    
+    container {
+    max-width: 38em;
+    margin: 2em auto;
+    padding: 0 16px;
+    }
+    
+    introduction-section p,
+    location-section p,
+    questions-section p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    }
+    
+    content-footer {
+    padding: 2em 0;
+    background: #2b3840;
+    text-align: center;
+    color: white;
+    }
+    
+    a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b69760;
+    }
+    
+    a:hover {
+    color: #b69760;
+    }
+    
+    @media only screen and (max-width: 571px) {
+    .masthead {
+    padding: 5em 0;
+    }
+    .masthead-intro {
+    font-size: 3em;
+    }
+    .masthead-heading {
+    font-size: 1em;
+    }
+    .container {
+    padding: 0 3em;
+    }
+    }

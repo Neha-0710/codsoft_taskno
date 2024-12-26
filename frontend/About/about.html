@@ -1,0 +1,215 @@
+<div class="about-section">
+  <fieldset style="background-color:rgb(235, 103, 103)">
+    <fieldset style="background-color:rgb(118, 175, 224)">
+        <h1>HOMEPAGE</h1>
+        <style>
+          body {
+              margin: 0;
+              padding: 0;
+              background-color: rgba(0, 0, 0, 0.694);
+          }
+          a {
+              text-decoration: none;
+              color: white;
+              padding-right: 20px;
+              padding: 20px;
+          }
+          nav {
+              display: flex;
+              background-color: rgb(102, 102, 233);
+              align-items: center;
+              justify-content: center;
+              
+          }
+          
+          button {
+              padding: 10px;
+              border-radius: 10px;
+              background-color: rgb(71, 193, 71);
+              color: white;
+              border-color: green;
+              display: flex;
+              position: relative;
+              left: 400px;
+          }
+          .artical {
+              padding-left: 150px;
+              color: white;
+              background-image: url("image.jpg");
+              padding-bottom: 500px;
+              background-size: cover;
+              padding-top: 200px;
+              position: sticky;
+          }
+          h4 {
+              font-family: 'Gabarito', sans-serif;
+              font-size: xx-large;
+          }
+          h1 {
+              font-size: 70px;
+              animation: findjob 2s ease-in-out;
+          }
+          p {
+              font-size: larger;
+              color: beige;
+              animation: para 2s ease-in-out;
+          }
+          .ar {
+              background-color: rgba(0, 0, 0, 0.15);
+              margin-right: 300px;
+              padding-left: 20px;
+          }
+          a:hover {
+              background-color: rgb(71, 199, 16);
+              color: blue;
+          }
+          button:hover {
+              background-color: rgb(71, 199, 16);
+              color: blue;
+              cursor: pointer;
+          }
+          #fi {
+              height: 40px;
+              width: 40px;
+              border-radius: 100px;
+              float: left;
+              padding: 2px;
+              margin: 0px;
+          }
+          @keyframes findjob {
+              0% {
+                  transform: translateX(-100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+          @keyframes para {
+              0% {
+                  transform: translateX(-100%);
+              }
+              100% {
+                  transform: translateX(0);
+              }
+          }
+          .count-animation {
+              animation: countUp 1s;
+          }
+          @keyframes countUp {
+              from {
+                  opacity: 0;
+              }
+              to {
+                  opacity: 1;
+                  counter-increment: jobCount;
+              }
+          }
+          h4::after {
+              content: counter(jobCount);
+          }
+          #so {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin-top: 20px;
+          }
+          select {
+              padding: 10px;
+              border-radius: 5px;
+              border: none;
+              font-size: 16px;
+          }
+          button#findJobButton {
+              padding: 10px 20px;
+              border-radius: 10px;
+              background-color: rgb(71, 193, 71);
+              color: white;
+              border-color: green;
+              font-size: 16px;
+          }
+          #findJobButton:hover{
+              box-shadow: 0 0 10px aqua;
+              background-color: green;
+              color:aliceblue;
+  
+          }
+          #so select:first-child {
+              margin-right: 10px;
+          }
+          input[type="button"]{
+              padding: 10px 20px;
+              background-color: rgb(71, 193, 71);
+              color: white;
+              border-radius: 20px;
+              
+          }
+         #bo:hover{
+              background-color: green;
+  color: aliceblue;
+  border-radius: 20px;
+  font-size: large;
+          }
+      </style>
+    </fieldset>
+    
+  </div>
+  <fieldset>
+  <h2 style="text-align:center"></h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://www.barcominc.com/wp-content/uploads/Android-Logo.jpg" alt="Jane" style="width:50%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title"><h2>CEO & Founder</h2>ANDROID SOLUTION</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus aspernatur, delectus odit, fuga quidem ratione ad doloremque dignissimos facere repudiandae nihil quis quod veritatis dolore? Possimus, aut aliquid. Illum reprehenderit obcaecati cupiditate dolore, libero modi fugit cumque dolores soluta debitis porro facere magni illo aut reiciendis atque officia at?</p>
+          <p>jane@example.com</p>
+          <form>
+            <button type="submit">connect</button>
+            <form>
+              <input type="file" id="fileUpload" name="fileUpload">
+              <button type="submit">Share your Resume</button>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2016/08/25/01/29/google-1618520_960_720.jpg" alt="Mike" style="width:50%">
+        <div class="container">
+          <h2>Sundar Pichai</h2>
+          <p class="title">CEO</p>
+          <p>Some text that describes me lorem ipsum ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum qui nobis nihil ducimus corporis in quos expedita quibusdam tempore asperiores, fuga eum architecto autem? Explicabo itaque commodi nam ipsam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi aut ducimus eius iure nihil quisquam odit, vel, quis incidunt exercitationem? Porro blanditiis voluptatem sunt. Aut id placeat incidunt repellat.</p>
+          <p>google@example.com</p>
+          <button class="button">Contact</button>
+          <form>
+            <input type="file" id="fileUpload" name="fileUpload">
+            <button type="submit">Share your Resume</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.030a903cf22c5f227943b734b12cb4a6?rik=BtDYrcyJvOxhug&riu=http%3a%2f%2f3.bp.blogspot.com%2f-omGjHXtXIPA%2fURx8HdVPZzI%2fAAAAAAAAAVY%2f1uf781CUOyk%2fs1600%2fmicrosoft-logo.jpg&ehk=Zx8FbPq29bqo2rFjPbZXEYOLAwrQ2TejVu7dpua0RwQ%3d&risl=&pid=ImgRaw&r=0" alt="John" style="width:50%">
+        <div class="container">
+          <h2>Satya Nadella</h2>
+          <p class="title">CEO and Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae atque enim officiis sint obcaecati beatae error laboriosam est magnam, illo quaerat iusto inventore doloribus possimus quis? Earum iure ipsa, voluptates molestiae ab architecto, a dolorem amet vitae incidunt laboriosam perferendis, eaque reprehenderit ullam perspiciatis error doloremque excepturi temporibus delectus culpa?</p>
+          <p>john@example.com</p>
+          <button class="button">Contact</button>
+          <form>
+            <input type="file" id="fileUpload" name="fileUpload">
+            <button type="submit">Share your Resume</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </fieldset>

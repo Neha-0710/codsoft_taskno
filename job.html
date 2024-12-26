@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #e9ecef;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        form input, form textarea, form select, form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .job-list {
+            margin-top: 2rem;
+        }
+        .job-item {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .job-item h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>sign in</h1>
+    </header>
+    
+    <div class="container" id="post-job">
+        <h2></h2>
+        <form id="job-post-form">
+            <input type="text" id="UserName" placeholder="write your Username" required />
+            <textarea id="experiance and skills " placeholder="write about the experiance and skills you have" required></textarea>
+            <input type="text" id="e-mail" placeholder="abc@gmail.com" required />
+            <input type="text" id="location" placeholder="Location" required />
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+    <div class="container" id="jobs">
+        <h2>Available Jobs</h2>
+        <div class="job-list" id="job-list">
+            <!-- Jobs will be dynamically added here -->
+        </div>
+    </div>
+    <script>
+        const jobPostForm = document.getElementById('job-post-form');
+        const jobList = document.getElementById('job-list');
+
+        jobPostForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const title = document.getElementById('job-title').value;
+            const description = document.getElementById('job-description').value;
+            const company = document.getElementById('company-name').value;
+            const location = document.getElementById('location').value;
+
+            const jobItem = document.createElement('div');
+            jobItem.classList.add('job-item');
+            jobItem.innerHTML = `
+                <h3>${title}</h3>
+                <p><strong>Company:</strong> ${company}</p>
+                <p><strong>Location:</strong> ${location}</p>
+                <p>${description}</p>
+                <button class="apply-button">Apply</button>
+            `;
+
+            jobItem.querySelector('.apply-button').addEventListener('click', () => {
+                alert(`You applied for ${title} at ${company}`);
+            });
+
+            jobList.appendChild(jobItem);
+
+            jobPostForm.reset();
+        });
+    </script>
+</body>
+</html>
